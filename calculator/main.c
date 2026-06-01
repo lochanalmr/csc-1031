@@ -32,15 +32,15 @@ int main()
     if (operation == '+'){
         answer = number1 + number2;
     }
-    else if (operation == '-'){
+    if (operation == '-'){
         answer = number1 - number2;
     }
-    else if (operation == '*'){
+    if (operation == '*'){
         answer = number1 * number2;
     }
-    else{
+    if (operation == '/'){
         answer = number1 / number2;
     }
-    printf("%.2f %c %.2f = %.2f\n", number1, operation, number2, answer);
+    printf("%.3f %c %.3f = %.3f\n", number1, operation, number2, answer);
     return 0;
 }
